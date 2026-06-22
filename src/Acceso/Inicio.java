@@ -3,13 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Acceso;
+import com.formdev.flatlaf.extras.FlatSVGIcon;
+import javax.swing.Timer;
 
 /**
  *
  * @author mavel
  */
 public class Inicio extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Inicio.class.getName());
 
     /**
@@ -17,9 +19,44 @@ public class Inicio extends javax.swing.JFrame {
      */
     public Inicio() {
         initComponents();
+
+        getContentPane().setBackground(new java.awt.Color(248, 249, 244));
+        jLabelLogo.setText("");
+        jLabelLogo.setOpaque(false);
+        jLabelLogo.setIcon(new FlatSVGIcon("Imagenes/Logo.svg", 200, 135));
+
+        setSize(320, 620);
         setResizable(false);
         setLocationRelativeTo(null);
+        iniciarAnimacionCarga();
+        
     }
+    
+    private int puntos = 0;
+    private Timer timerCarga;
+    private void iniciarAnimacionCarga() {
+        timerCarga = new Timer(500, e -> {
+        puntos ++;
+        
+            String texto = "Cargando";
+            for (int i = 0; i < puntos; i++) {
+                texto += ".";
+            }
+
+            lblCargando.setText(texto);
+            
+            if (puntos==3){
+                timerCarga.stop();
+                Login ventana = new Login();
+                ventana.setLocationRelativeTo(null);
+                ventana.setVisible(true);
+                this.dispose();
+            }
+    });
+
+        timerCarga.start();
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -30,19 +67,53 @@ public class Inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabelLogo = new javax.swing.JLabel();
+        EcoLazo = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        lblCargando = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("EcoLazo");
+        setBackground(new java.awt.Color(229, 214, 193));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 390, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 760, Short.MAX_VALUE)
-        );
+        jLabelLogo.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 200, 180));
+
+        EcoLazo.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        EcoLazo.setForeground(new java.awt.Color(39, 153, 69));
+        EcoLazo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        EcoLazo.setText("EcoLazo");
+        getContentPane().add(EcoLazo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 320, 50));
+
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Dona, Comparte, Reutiliza");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 320, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 110, 110));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas2.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 110, 120));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ondas.png"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 320, 180));
+
+        lblCargando.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblCargando.setText("Cargando");
+        getContentPane().add(lblCargando, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 320, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hoja.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -73,5 +144,13 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel EcoLazo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabelLogo;
+    private javax.swing.JLabel lblCargando;
     // End of variables declaration//GEN-END:variables
 }

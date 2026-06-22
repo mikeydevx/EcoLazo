@@ -3,8 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package EcoLazo;
-import Acceso.Inicio;
 import com.formdev.flatlaf.FlatLightLaf;
+import javax.swing.UIManager;
+
+import Acceso.Inicio;
 
 /**
  *
@@ -12,12 +14,15 @@ import com.formdev.flatlaf.FlatLightLaf;
  */
 public class EcoLazo {
     public static void main(String[] args) {
+        UIManager.put("Button.arc", 20);
+        UIManager.put("Component.arc", 16);
+        UIManager.put("TextComponent.arc", 16);
+
         FlatLightLaf.setup();
+        
         java.awt.EventQueue.invokeLater(() -> {
             Inicio pantalla = new Inicio();
-            pantalla.setLocationRelativeTo(null);
             pantalla.setVisible(true);
         });
-
     }
 }
