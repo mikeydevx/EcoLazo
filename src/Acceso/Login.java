@@ -52,9 +52,7 @@ public class Login extends javax.swing.JFrame {
         EcoLazo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         txtCorreo = new javax.swing.JTextField();
-        jLabelcandado = new javax.swing.JLabel();
         txtPassword = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         jLabelolvidastetucontrasena = new javax.swing.JLabel();
@@ -88,9 +86,6 @@ public class Login extends javax.swing.JFrame {
         jLabel1.setText("Bienvenido");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 250, 320, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Usuario.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, -1, 30));
-
         txtCorreo.setBackground(new java.awt.Color(234, 240, 226));
         txtCorreo.setForeground(new java.awt.Color(0, 0, 0));
         txtCorreo.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -101,9 +96,6 @@ public class Login extends javax.swing.JFrame {
         });
         txtCorreo.addActionListener(this::txtCorreoActionPerformed);
         getContentPane().add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 230, 30));
-
-        jLabelcandado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/candado.png"))); // NOI18N
-        getContentPane().add(jLabelcandado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, 30));
 
         txtPassword.setBackground(new java.awt.Color(234, 240, 226));
         txtPassword.setForeground(new java.awt.Color(0, 0, 0));
@@ -230,9 +222,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabelLogo;
-    private javax.swing.JLabel jLabelcandado;
     private javax.swing.JLabel jLabelnotienescuenta;
     private javax.swing.JLabel jLabelolvidastetucontrasena;
     private javax.swing.JLabel jLabelregistraser;

@@ -38,7 +38,7 @@ public class CrearCuenta extends javax.swing.JFrame {
         txtPassword2.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
 
         
-         setImagenNitida(jLabelhojas1, "Imagenes/HojasChidas.png");
+         
         
 
         
@@ -56,35 +56,22 @@ public class CrearCuenta extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabelhojas1 = new javax.swing.JLabel();
         jLabelcrearcuenta = new javax.swing.JLabel();
         jLabelmensajemotivador = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabelcandado = new javax.swing.JLabel();
-        jLabelcandado1 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         txtApellido = new javax.swing.JTextField();
         txtCorreo = new javax.swing.JTextField();
         txtPassword = new javax.swing.JPasswordField();
         txtPassword2 = new javax.swing.JPasswordField();
         txtNombre = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabelhojas3 = new javax.swing.JLabel();
         jChecBoxTerminos = new javax.swing.JCheckBox();
         jLabelIniciarsesion = new javax.swing.JLabel();
         jLabelYatinescuenta1 = new javax.swing.JLabel();
-        jLabelondas = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Crear Cuenta");
         setBackground(new java.awt.Color(229, 214, 193));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabelhojas1.setText("jLabel1");
-        getContentPane().add(jLabelhojas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 110, 110));
 
         jLabelcrearcuenta.setBackground(new java.awt.Color(255, 255, 255));
         jLabelcrearcuenta.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -97,21 +84,6 @@ public class CrearCuenta extends javax.swing.JFrame {
         jLabelmensajemotivador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelmensajemotivador.setText("Únete a EcoLazo y se parte del cambio");
         getContentPane().add(jLabelmensajemotivador, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 320, -1));
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Usuario.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, 30));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Correo.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 20, 30));
-
-        jLabelcandado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/candado.png"))); // NOI18N
-        getContentPane().add(jLabelcandado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, -1, 30));
-
-        jLabelcandado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/candado.png"))); // NOI18N
-        getContentPane().add(jLabelcandado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, 30));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Usuario.png"))); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, -1, 30));
 
         txtApellido.setBackground(new java.awt.Color(234, 240, 226));
         txtApellido.setForeground(new java.awt.Color(0, 0, 0));
@@ -201,10 +173,6 @@ public class CrearCuenta extends javax.swing.JFrame {
         jButton1.addActionListener(this::jButton1ActionPerformed);
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 160, 30));
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 470, 90, 150));
-        getContentPane().add(jLabelhojas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 80, 100));
-
         jChecBoxTerminos.setText("Aceptar los Términos y Condiciones ");
         jChecBoxTerminos.addActionListener(this::jChecBoxTerminosActionPerformed);
         getContentPane().add(jChecBoxTerminos, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, -1, -1));
@@ -229,15 +197,6 @@ public class CrearCuenta extends javax.swing.JFrame {
         jLabelYatinescuenta1.setForeground(new java.awt.Color(0, 0, 0));
         jLabelYatinescuenta1.setText("Ya tienes cuenta? ");
         getContentPane().add(jLabelYatinescuenta1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 450, -1, -1));
-
-        jLabelondas.setBackground(new java.awt.Color(255, 255, 255));
-        jLabelondas.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabelondas.setForeground(new java.awt.Color(0, 0, 0));
-        jLabelondas.setText("jLabel4");
-        getContentPane().add(jLabelondas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 320, 180));
-
-        jButton2.addActionListener(this::jButton2ActionPerformed);
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 40, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -331,13 +290,6 @@ public class CrearCuenta extends javax.swing.JFrame {
     private void jLabelIniciarsesionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelIniciarsesionMouseExited
         jLabelIniciarsesion.setText("Iniciar sesión");
     }//GEN-LAST:event_jLabelIniciarsesionMouseExited
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Login ventana3 = new Login();
-        ventana3.setLocationRelativeTo(null);
-        ventana3.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jLabelIniciarsesionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelIniciarsesionMouseClicked
         Login ventana3 = new Login();
@@ -442,62 +394,16 @@ public class CrearCuenta extends javax.swing.JFrame {
     }
     
     
-    private void setImagenNitida(JLabel label, String rutaPaquete) {
-    try {
-        java.net.URL url = getClass().getClassLoader().getResource(rutaPaquete);
-        if (url == null) return;
-
-        // 1. Carga los píxeles puros en alta resolución (tu exportación 3x)
-        java.awt.Image someImage = javax.imageio.ImageIO.read(url);
-
-        
-        // 2. Obtiene el tamaño que le diste al JLabel con el mouse
-        int anchoDestino = label.getWidth() <= 0 ? 150 : label.getWidth();
-        int altoDestino = label.getHeight() <= 0 ? 150 : label.getHeight();
-
-        // 3. Crea un lienzo nuevo vacío con el tamaño del JLabel
-        java.awt.image.BufferedImage imgNitida = new java.awt.image.BufferedImage(
-            anchoDestino, altoDestino, java.awt.image.BufferedImage.TYPE_INT_ARGB
-        );
-
-        // 4. Activamos el motor Graphics2D para forzar la alta fidelidad
-        java.awt.Graphics2D g2 = imgNitida.createGraphics();
-        
-        // Configuraciones críticas de renderizado (Interpolación Bicúbica y Antialiasing)
-        g2.setRenderingHint(java.awt.RenderingHints.KEY_INTERPOLATION, java.awt.RenderingHints.VALUE_INTERPOLATION_BICUBIC);
-        g2.setRenderingHint(java.awt.RenderingHints.KEY_RENDERING, java.awt.RenderingHints.VALUE_RENDER_QUALITY);
-        g2.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
-
-        // 5. Dibujamos la imagen comprimiendo los píxeles del 3x de forma súper limpia
-        g2.drawImage(someImage, 0, 0, anchoDestino, altoDestino, null);
-        g2.dispose();
-
-        // 6. Asignamos el resultado final ultra nítido al JLabel
-        label.setIcon(new javax.swing.ImageIcon(imgNitida));
-        
-    } catch (Exception e) {
-        System.out.println("Error al procesar la imagen nítida: " + e.getMessage());
-    }
-}
+   
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JCheckBox jChecBoxTerminos;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabelIniciarsesion;
     private javax.swing.JLabel jLabelYatinescuenta1;
-    private javax.swing.JLabel jLabelcandado;
-    private javax.swing.JLabel jLabelcandado1;
     private javax.swing.JLabel jLabelcrearcuenta;
-    private javax.swing.JLabel jLabelhojas1;
-    private javax.swing.JLabel jLabelhojas3;
     private javax.swing.JLabel jLabelmensajemotivador;
-    private javax.swing.JLabel jLabelondas;
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextField txtNombre;
