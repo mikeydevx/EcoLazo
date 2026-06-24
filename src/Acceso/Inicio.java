@@ -21,9 +21,17 @@ public class Inicio extends javax.swing.JFrame {
         initComponents();
 
         getContentPane().setBackground(new java.awt.Color(248, 249, 244));
-        jLabelLogo.setText("");
-        jLabelLogo.setOpaque(false);
+        
         jLabelLogo.setIcon(new FlatSVGIcon("Imagenes/Logo.svg", 200, 135));
+        jLabel1.setIcon(new FlatSVGIcon("Imagenes/Hojas.svg", 200, 135));
+        jLabel1.setIcon(new com.formdev.flatlaf.extras.FlatSVGIcon("Imagenes/Hojas.svg", 110, 110));
+        jLabel3.setIcon(new FlatSVGIcon("Imagenes/Hojas2.svg", 200, 135));
+        jLabel3.setIcon(new com.formdev.flatlaf.extras.FlatSVGIcon("Imagenes/Hojas2.svg", 90, 110));
+        jLabel4.setIcon(new FlatSVGIcon("Imagenes/Ondas.svg", 200, 135));
+        jLabel4.setIcon(new com.formdev.flatlaf.extras.FlatSVGIcon("Imagenes/Ondas.svg", 320, 110));
+        jLabel5.setIcon(new FlatSVGIcon("Imagenes/hoja.svg", 40, 20));
+        jLabel5.setIcon(new com.formdev.flatlaf.extras.FlatSVGIcon("Imagenes/hoja.svg", 20, 20));
+
 
         setSize(320, 620);
         setResizable(false);
@@ -96,24 +104,16 @@ public class Inicio extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Dona, Comparte, Reutiliza");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 320, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 110, 110));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas2.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 110, 120));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ondas.png"))); // NOI18N
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 320, 180));
 
         lblCargando.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCargando.setText("Cargando");
         getContentPane().add(lblCargando, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 320, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/hoja.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 380, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 30, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

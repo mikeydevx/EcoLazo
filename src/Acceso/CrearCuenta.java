@@ -4,6 +4,10 @@
  */
 package Acceso;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 /**
  *
  * @author mavel
@@ -34,10 +38,14 @@ public class CrearCuenta extends javax.swing.JFrame {
         txtPassword2.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
 
         
-        setSize(320, 620);
-        setResizable(false);
-        setLocationRelativeTo(null);
+         setImagenNitida(jLabelhojas1, "Imagenes/HojasChidas.png");
+        
+
+        
     }
+    
+    
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -75,7 +83,6 @@ public class CrearCuenta extends javax.swing.JFrame {
         setBackground(new java.awt.Color(229, 214, 193));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabelhojas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas.png"))); // NOI18N
         jLabelhojas1.setText("jLabel1");
         getContentPane().add(jLabelhojas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 110, 110));
 
@@ -438,6 +445,46 @@ public class CrearCuenta extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new CrearCuenta().setVisible(true));
     }
+    
+    
+    private void setImagenNitida(JLabel label, String rutaPaquete) {
+    try {
+        java.net.URL url = getClass().getClassLoader().getResource(rutaPaquete);
+        if (url == null) return;
+
+        // 1. Carga los píxeles puros en alta resolución (tu exportación 3x)
+        java.awt.Image someImage = javax.imageio.ImageIO.read(url);
+
+        
+        // 2. Obtiene el tamaño que le diste al JLabel con el mouse
+        int anchoDestino = label.getWidth() <= 0 ? 150 : label.getWidth();
+        int altoDestino = label.getHeight() <= 0 ? 150 : label.getHeight();
+
+        // 3. Crea un lienzo nuevo vacío con el tamaño del JLabel
+        java.awt.image.BufferedImage imgNitida = new java.awt.image.BufferedImage(
+            anchoDestino, altoDestino, java.awt.image.BufferedImage.TYPE_INT_ARGB
+        );
+
+        // 4. Activamos el motor Graphics2D para forzar la alta fidelidad
+        java.awt.Graphics2D g2 = imgNitida.createGraphics();
+        
+        // Configuraciones críticas de renderizado (Interpolación Bicúbica y Antialiasing)
+        g2.setRenderingHint(java.awt.RenderingHints.KEY_INTERPOLATION, java.awt.RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+        g2.setRenderingHint(java.awt.RenderingHints.KEY_RENDERING, java.awt.RenderingHints.VALUE_RENDER_QUALITY);
+        g2.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+        // 5. Dibujamos la imagen comprimiendo los píxeles del 3x de forma súper limpia
+        g2.drawImage(someImage, 0, 0, anchoDestino, altoDestino, null);
+        g2.dispose();
+
+        // 6. Asignamos el resultado final ultra nítido al JLabel
+        label.setIcon(new javax.swing.ImageIcon(imgNitida));
+        
+    } catch (Exception e) {
+        System.out.println("Error al procesar la imagen nítida: " + e.getMessage());
+    }
+}
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
