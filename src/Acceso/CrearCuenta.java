@@ -201,11 +201,8 @@ public class CrearCuenta extends javax.swing.JFrame {
         jButton1.addActionListener(this::jButton1ActionPerformed);
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 160, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas5.png"))); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 470, 90, 150));
-
-        jLabelhojas3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas3.png"))); // NOI18N
         getContentPane().add(jLabelhojas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 80, 100));
 
         jChecBoxTerminos.setText("Aceptar los Términos y Condiciones ");
@@ -236,11 +233,9 @@ public class CrearCuenta extends javax.swing.JFrame {
         jLabelondas.setBackground(new java.awt.Color(255, 255, 255));
         jLabelondas.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabelondas.setForeground(new java.awt.Color(0, 0, 0));
-        jLabelondas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ondas.png"))); // NOI18N
         jLabelondas.setText("jLabel4");
         getContentPane().add(jLabelondas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 320, 180));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/flecha.png"))); // NOI18N
         jButton2.addActionListener(this::jButton2ActionPerformed);
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 40, 30));
 
