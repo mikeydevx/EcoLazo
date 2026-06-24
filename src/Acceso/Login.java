@@ -54,16 +54,12 @@ public class Login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         txtCorreo = new javax.swing.JTextField();
-        jLabelhojas3 = new javax.swing.JLabel();
-        jLabelhojas1 = new javax.swing.JLabel();
-        jLabelhojas2 = new javax.swing.JLabel();
         jLabelcandado = new javax.swing.JLabel();
         txtPassword = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         jLabelolvidastetucontrasena = new javax.swing.JLabel();
         jLabelnotienescuenta = new javax.swing.JLabel();
         jLabelregistraser = new javax.swing.JLabel();
-        jLabelondas = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -105,15 +101,6 @@ public class Login extends javax.swing.JFrame {
         });
         txtCorreo.addActionListener(this::txtCorreoActionPerformed);
         getContentPane().add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 230, 30));
-
-        jLabelhojas3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas3.png"))); // NOI18N
-        getContentPane().add(jLabelhojas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, 80, 100));
-
-        jLabelhojas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas2.png"))); // NOI18N
-        getContentPane().add(jLabelhojas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 100));
-
-        jLabelhojas2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Hojas4.png"))); // NOI18N
-        getContentPane().add(jLabelhojas2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 30, 80));
 
         jLabelcandado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/candado.png"))); // NOI18N
         getContentPane().add(jLabelcandado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, 30));
@@ -170,13 +157,6 @@ public class Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabelregistraser, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 80, -1));
-
-        jLabelondas.setBackground(new java.awt.Color(255, 255, 255));
-        jLabelondas.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabelondas.setForeground(new java.awt.Color(0, 0, 0));
-        jLabelondas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Ondas.png"))); // NOI18N
-        jLabelondas.setText("jLabel4");
-        getContentPane().add(jLabelondas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 320, 180));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -253,12 +233,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabelLogo;
     private javax.swing.JLabel jLabelcandado;
-    private javax.swing.JLabel jLabelhojas1;
-    private javax.swing.JLabel jLabelhojas2;
-    private javax.swing.JLabel jLabelhojas3;
     private javax.swing.JLabel jLabelnotienescuenta;
     private javax.swing.JLabel jLabelolvidastetucontrasena;
-    private javax.swing.JLabel jLabelondas;
     private javax.swing.JLabel jLabelregistraser;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JPasswordField txtPassword;
