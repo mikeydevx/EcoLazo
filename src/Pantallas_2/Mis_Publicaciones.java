@@ -32,49 +32,51 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jbnactivo = new javax.swing.JButton();
+        jbnborradores = new javax.swing.JButton();
+        jbnhistorial = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        jbnpublicar = new javax.swing.JButton();
+        jbnborrar = new javax.swing.JButton();
+        jbneditar = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        jbneditar2 = new javax.swing.JButton();
+        jbnborrar2 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        jbneditar3 = new javax.swing.JButton();
+        jbnborrar3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        jbnactivo.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jbnactivo.setText("Activos (3)");
+        getContentPane().add(jbnactivo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 80, -1));
 
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, -1, -1));
+        jbnborradores.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jbnborradores.setText("Borradores (1)");
+        getContentPane().add(jbnborradores, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 100, -1));
 
-        jButton3.setText("jButton3");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
+        jbnhistorial.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jbnhistorial.setText("Historial (2)");
+        getContentPane().add(jbnhistorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 90, -1));
 
-        jLabel1.setText("jLabel1");
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 0)));
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 260, 90));
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/sillas.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 70, 70));
 
         jLabel3.setText("Silla de madera");
@@ -86,22 +88,22 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
         jLabel5.setText("2 interesados");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, -1, -1));
 
-        jButton4.setForeground(new java.awt.Color(51, 153, 0));
-        jButton4.setText("Publicar nuevo objeto");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 503, 240, 30));
+        jbnpublicar.setForeground(new java.awt.Color(51, 153, 0));
+        jbnpublicar.setText("Publicar nuevo objeto");
+        jbnpublicar.addActionListener(this::jbnpublicarActionPerformed);
+        getContentPane().add(jbnpublicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 503, 240, 30));
 
-        jButton5.setText("jButton5");
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 20, -1));
+        jbnborrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/botebasura.png"))); // NOI18N
+        getContentPane().add(jbnborrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 20, -1));
 
-        jButton6.setText("jButton6");
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 20, -1));
+        jbneditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/lapiz.png"))); // NOI18N
+        getContentPane().add(jbneditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 20, -1));
 
-        jLabel6.setText("jLabel6");
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 0)));
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 260, 90));
 
-        jLabel7.setText("jLabel7");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 70, 80));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/sudadera.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 70, 70));
 
         jLabel8.setText("Sudadera negra");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, -1, -1));
@@ -109,22 +111,21 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
         jLabel9.setText("Ropa");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, -1, -1));
 
-        jLabel10.setText("1 interesados");
+        jLabel10.setText("1 interesado");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, -1, -1));
 
-        jButton7.setText("jButton7");
-        jButton7.addActionListener(this::jButton7ActionPerformed);
-        getContentPane().add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 20, -1));
+        jbneditar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/lapiz.png"))); // NOI18N
+        jbneditar2.addActionListener(this::jbneditar2ActionPerformed);
+        getContentPane().add(jbneditar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 20, -1));
 
-        jButton8.setText("jButton8");
-        getContentPane().add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 20, -1));
+        jbnborrar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/botebasura.png"))); // NOI18N
+        getContentPane().add(jbnborrar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 20, -1));
 
-        jLabel11.setText("jLabel11");
         jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 0)));
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 260, 90));
 
-        jLabel12.setText("jLabel12");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 70, 80));
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/libro.png"))); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 70, 70));
 
         jLabel13.setText("The metamorphosis");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, -1, -1));
@@ -135,18 +136,24 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
         jLabel15.setText("3 interesados");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, -1, 20));
 
-        jButton9.setText("jButton7");
-        getContentPane().add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 20, -1));
+        jbneditar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/lapiz.png"))); // NOI18N
+        getContentPane().add(jbneditar3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 20, -1));
 
-        jButton10.setText("jButton8");
-        getContentPane().add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 20, -1));
+        jbnborrar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/botebasura.png"))); // NOI18N
+        getContentPane().add(jbnborrar3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 20, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void jbneditar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbneditar2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_jbneditar2ActionPerformed
+
+    private void jbnpublicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbnpublicarActionPerformed
+        Publicar_Objeto ventanaPubObj = new Publicar_Objeto();
+        ventanaPubObj.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jbnpublicarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,16 +181,6 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -199,5 +196,15 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton jbnactivo;
+    private javax.swing.JButton jbnborradores;
+    private javax.swing.JButton jbnborrar;
+    private javax.swing.JButton jbnborrar2;
+    private javax.swing.JButton jbnborrar3;
+    private javax.swing.JButton jbneditar;
+    private javax.swing.JButton jbneditar2;
+    private javax.swing.JButton jbneditar3;
+    private javax.swing.JButton jbnhistorial;
+    private javax.swing.JButton jbnpublicar;
     // End of variables declaration//GEN-END:variables
 }

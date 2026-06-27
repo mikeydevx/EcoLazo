@@ -4,11 +4,15 @@
  */
 package Pantallas_2;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author hinol
  */
 public class Detalles_Articulo extends javax.swing.JFrame {
+
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Detalles_Articulo.class.getName());
 
@@ -21,7 +25,18 @@ public class Detalles_Articulo extends javax.swing.JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         
-    }
+        ImageIcon icon = new ImageIcon(getClass().getResource("/Imagenes_png/sillas.png"));
+
+        Image img = icon.getImage().getScaledInstance(
+            jLabel3.getWidth(),
+            jLabel3.getHeight(),
+            java.awt.Image.SCALE_SMOOTH);
+
+        jLabel3.setIcon(new ImageIcon(img));
+        }
+    
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -32,7 +47,6 @@ public class Detalles_Articulo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -45,86 +59,89 @@ public class Detalles_Articulo extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        jbnregresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, -1, -1));
-
-        jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 220, 140));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/sillas.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 210, 130));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel4.setText("Sillas de madera");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 140, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 140, 30));
 
         jLabel5.setForeground(new java.awt.Color(102, 204, 0));
         jLabel5.setText("Muebles");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 60, 30));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setText("Descripción");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 90, -1));
 
         jLabel7.setText("Silla de madera en buen estado, perfecta ");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 220, -1));
 
         jLabel8.setText("para comedor o escritorio.");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 200, 20));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel9.setText("Condiciones");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, 90, -1));
 
         jLabel10.setText("En buen estado, detalles mínimos de uso.");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, -1, -1));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 230, -1));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel11.setText("Horarios disponibles");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 140, -1));
 
         jLabel12.setText("Lunes a Viernes 10:00 a 14:00 hrs");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 190, 30));
 
         jLabel13.setText("                                Ubicación aproximada");
         jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 204, 0)));
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 240, 50));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 240, 40));
 
-        jLabel14.setText("jLabel14");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 430, 40, 30));
-
-        jLabel15.setText("León, Gto.");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 450, -1, -1));
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/ubi.png"))); // NOI18N
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, -1, 40));
 
         jButton1.setBackground(new java.awt.Color(51, 153, 0));
         jButton1.setText("Me interesa!");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, 240, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 240, 50));
 
         jLabel16.setText("También te podría interesar");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 550, 160, -1));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 180, 20));
 
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/sudadera.png"))); // NOI18N
         jLabel17.setText("jLabel17");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 90, 40));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 90, 50));
 
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/libro.png"))); // NOI18N
         jLabel18.setText("jLabel18");
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 570, 80, 40));
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, 80, 50));
 
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/Computer.png"))); // NOI18N
         jLabel19.setText("jLabel19");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 570, 80, 30));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 530, 80, 50));
 
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 30, -1));
+        jbnregresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/flecha.png"))); // NOI18N
+        jbnregresar.addActionListener(this::jbnregresarActionPerformed);
+        getContentPane().add(jbnregresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 20, 20));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbnregresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbnregresarActionPerformed
+        Mis_Publicaciones ventanaMisPub = new Mis_Publicaciones();
+        ventanaMisPub.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jbnregresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -153,18 +170,15 @@ public class Detalles_Articulo extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -172,5 +186,6 @@ public class Detalles_Articulo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JButton jbnregresar;
     // End of variables declaration//GEN-END:variables
 }

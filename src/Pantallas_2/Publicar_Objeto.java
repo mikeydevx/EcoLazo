@@ -20,7 +20,24 @@ public class Publicar_Objeto extends javax.swing.JFrame {
         setSize(320, 620);
         setResizable(false);
         setLocationRelativeTo(null);
+        
+        txtTitulo.putClientProperty("JTextField.placeholderText", "Ej. Mesa de centro");
+        txtTitulo.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
+        
+        //txtCategoria.putClientProperty("JTextField.placeholderText", "Ej. Muebles");
+        //txtCategoria.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
+        
+        txtDescripcion.putClientProperty("JTextField.placeholderText", "Describe tu objeto");
+        txtDescripcion.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
+        
+        txtHorarios.putClientProperty("JTextField.placeholderText", "Elige días y horarios");
+        txtHorarios.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
+        
+        txtCondicion.putClientProperty("JTextField.placeholderText", "Ej. Entrega a domicilio");
+        txtCondicion.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,7 +48,7 @@ public class Publicar_Objeto extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btnflecha = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -39,37 +56,37 @@ public class Publicar_Objeto extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtTitulo = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        txtDescripcion = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
+        txtHorarios = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        txtCondicion = new javax.swing.JTextField();
+        btnborrador = new javax.swing.JButton();
+        btnpublicar = new javax.swing.JButton();
+        cboCategoria = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 23, 30, -1));
+        btnflecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/flecha.png"))); // NOI18N
+        btnflecha.addActionListener(this::btnflechaActionPerformed);
+        getContentPane().add(btnflecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 23, 20, 20));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel1.setText("Publicar objeto");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 30, 90, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 90, -1));
 
         jLabel2.setText("Fotos del objeto");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 100, -1));
 
-        jLabel3.setText("jLabel3");
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 0)));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 210, 110));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 210, 110));
 
-        jLabel4.setText("jLabel4");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 110, -1, -1));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/camara.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 40, -1));
 
         jLabel5.setForeground(new java.awt.Color(102, 204, 0));
         jLabel5.setText("Agregar fotos");
@@ -80,55 +97,110 @@ public class Publicar_Objeto extends javax.swing.JFrame {
 
         jLabel7.setText("Título del objeto");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 110, -1));
-
-        jTextField1.setText("jTextField1");
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 230, -1));
+        getContentPane().add(txtTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 230, -1));
 
         jLabel8.setText("Categoría");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
 
-        jTextField2.setText("jTextField2");
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 230, -1));
-
         jLabel9.setText("Descripción");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
-
-        jTextField3.setText("jTextField3");
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 230, -1));
+        getContentPane().add(txtDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 230, -1));
 
         jLabel10.setText("Horarios disponibles");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 110, -1));
-
-        jTextField4.setText("jTextField4");
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 230, -1));
+        getContentPane().add(txtHorarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 230, -1));
 
         jLabel11.setText("Condiciones de entrega");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
+        getContentPane().add(txtCondicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 230, -1));
 
-        jTextField5.setText("jTextField5");
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 440, 230, -1));
+        btnborrador.setBackground(new java.awt.Color(204, 204, 204));
+        btnborrador.setForeground(new java.awt.Color(0, 0, 0));
+        btnborrador.setText("Guardar borrador");
+        getContentPane().add(btnborrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, 140, -1));
 
-        jButton2.setBackground(new java.awt.Color(204, 204, 204));
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Guardar borrador");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, 140, -1));
+        btnpublicar.setBackground(new java.awt.Color(51, 153, 0));
+        btnpublicar.setText("Publicar");
+        btnpublicar.addActionListener(this::btnpublicarActionPerformed);
+        getContentPane().add(btnpublicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(51, 153, 0));
-        jButton3.setText("Publicar");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, -1, -1));
+        cboCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecciona una categoria...", "Muebles", "Ropa", "Libros" }));
+        cboCategoria.addActionListener(this::cboCategoriaActionPerformed);
+        getContentPane().add(cboCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 230, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnpublicarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpublicarActionPerformed
+        String titulo = txtTitulo.getText().trim();
+        String categoria= cboCategoria.getSelectedItem().toString();
+        String descripcion = txtDescripcion.getText().trim();
+        String horarios = txtHorarios.getText().trim();
+        String condicion = txtCondicion.getText().trim();
+        
+        if (titulo.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, 
+                "El campo 'Titulo' no puede estar vacío.", 
+                "Atención", 
+            javax.swing.JOptionPane.WARNING_MESSAGE);
+        
+            txtTitulo.requestFocus(); 
+            return;
+        }
+        
+        if (cboCategoria.getSelectedIndex() == 0) {
+            javax.swing.JOptionPane.showMessageDialog(this, 
+                "Por favor, selecciona una categoría válida.", 
+                "Atención", 
+                javax.swing.JOptionPane.WARNING_MESSAGE);
+            cboCategoria.requestFocus(); 
+            return;
+        }
+        
+        if (descripcion.isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, 
+            "El campo 'Descripcion' no puede estar vacío.", 
+            "Atención", 
+            javax.swing.JOptionPane.WARNING_MESSAGE);
+        
+            txtDescripcion.requestFocus(); 
+            return;
+        }
+        
+        if (horarios.isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, 
+            "El campo 'Horarios disponibles' no puede estar vacío.", 
+            "Atención", 
+            javax.swing.JOptionPane.WARNING_MESSAGE);
+        
+            txtHorarios.requestFocus(); 
+            return;
+        }
+        
+        if (condicion.isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, 
+            "El campo 'Condicion de entrega' no puede estar vacío.", 
+            "Atención", 
+            javax.swing.JOptionPane.WARNING_MESSAGE);
+            txtCondicion.requestFocus(); 
+            return;
+        }
+    }//GEN-LAST:event_btnpublicarActionPerformed
+
+    private void cboCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cboCategoriaActionPerformed
+        
+    }//GEN-LAST:event_cboCategoriaActionPerformed
+
+    private void btnflechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnflechaActionPerformed
+       Mis_Publicaciones ventanaMisPub = new Mis_Publicaciones();
+        ventanaMisPub.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnflechaActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -139,16 +211,15 @@ public class Publicar_Objeto extends javax.swing.JFrame {
         } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new Publicar_Objeto().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btnborrador;
+    private javax.swing.JButton btnflecha;
+    private javax.swing.JButton btnpublicar;
+    private javax.swing.JComboBox<String> cboCategoria;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -160,10 +231,9 @@ public class Publicar_Objeto extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField txtCondicion;
+    private javax.swing.JTextField txtDescripcion;
+    private javax.swing.JTextField txtHorarios;
+    private javax.swing.JTextField txtTitulo;
     // End of variables declaration//GEN-END:variables
 }
