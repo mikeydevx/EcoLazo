@@ -52,8 +52,6 @@ public class Ubicación extends javax.swing.JFrame {
 
         jButton1.setText("jButton1");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 30, -1));
-
-        jTextField1.setText("jTextField1");
         getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 240, -1));
 
         jLabel2.setText("jLabel2");
