@@ -20,23 +20,24 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
-     
+
         getContentPane().setBackground(new java.awt.Color(248, 249, 244));
         jLabelLogo.setText("");
         jLabelLogo.setOpaque(false);
-        jLabelLogo.setIcon(new FlatSVGIcon("Imagenes/Logo.svg", 200, 135));
+        jLabelLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelLogo.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelLogo.setIcon(new FlatSVGIcon("Imagenes/Logo.svg", 160, 108));
         txtCorreo.putClientProperty("JTextField.placeholderText", "Correo electrónico o Teléfono");
         txtCorreo.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
 
         txtPassword.putClientProperty("JTextField.placeholderText", "Contraseña");
         txtPassword.putClientProperty("JComponent.roundRect", true);
         txtPassword.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
-        
-        
+
         setSize(320, 620);
         setResizable(false);
         setLocationRelativeTo(null);
-        
+
     }
 
     /**
@@ -49,7 +50,6 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabelLogo = new javax.swing.JLabel();
-        EcoLazo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         txtCorreo = new javax.swing.JTextField();
@@ -58,6 +58,8 @@ public class Login extends javax.swing.JFrame {
         jLabelolvidastetucontrasena = new javax.swing.JLabel();
         jLabelnotienescuenta = new javax.swing.JLabel();
         jLabelregistraser = new javax.swing.JLabel();
+        EcoLazo1 = new javax.swing.JLabel();
+        EcoLazo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
@@ -65,13 +67,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelLogo.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 200, 180));
-
-        EcoLazo.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        EcoLazo.setForeground(new java.awt.Color(39, 153, 69));
-        EcoLazo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EcoLazo.setText("EcoLazo");
-        getContentPane().add(EcoLazo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 320, 50));
+        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 320, 180));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -150,6 +146,18 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(jLabelregistraser, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 80, -1));
 
+        EcoLazo1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        EcoLazo1.setForeground(new java.awt.Color(101, 175, 43));
+        EcoLazo1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        EcoLazo1.setText("Eco");
+        getContentPane().add(EcoLazo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 150, 50));
+
+        EcoLazo.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        EcoLazo.setForeground(new java.awt.Color(37, 152, 73));
+        EcoLazo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        EcoLazo.setText("Lazo");
+        getContentPane().add(EcoLazo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 170, 50));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -219,6 +227,7 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel EcoLazo;
+    private javax.swing.JLabel EcoLazo1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

@@ -21,27 +21,27 @@ public class Inicio extends javax.swing.JFrame {
         initComponents();
 
         getContentPane().setBackground(new java.awt.Color(248, 249, 244));
-        
-        jLabelLogo.setIcon(new FlatSVGIcon("Imagenes/Logo.svg", 200, 135));
-        jLabel1.setIcon(new FlatSVGIcon("Imagenes/Hojas.svg", 200, 135));
-        jLabel1.setIcon(new com.formdev.flatlaf.extras.FlatSVGIcon("Imagenes/Hojas.svg", 110, 110));
-        jLabel3.setIcon(new FlatSVGIcon("Imagenes/Hojas2.svg", 200, 135));
-        jLabel3.setIcon(new com.formdev.flatlaf.extras.FlatSVGIcon("Imagenes/Hojas2.svg", 90, 110));
-        jLabel4.setIcon(new FlatSVGIcon("Imagenes/Ondas.svg", 200, 135));
-        jLabel4.setIcon(new com.formdev.flatlaf.extras.FlatSVGIcon("Imagenes/Ondas.svg", 320, 110));
-        jLabel5.setIcon(new FlatSVGIcon("Imagenes/hoja.svg", 40, 20));
-        jLabel5.setIcon(new com.formdev.flatlaf.extras.FlatSVGIcon("Imagenes/hoja.svg", 20, 20));
+        jLabelLogo.setOpaque(false);
+        jLabelLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelLogo.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelLogo.setIcon(new FlatSVGIcon("Imagenes/Logo.svg", 210, 142));
+        jLabelLogo.setBounds(0, 145, 320, 150);
 
+        jLabel1.setIcon(new FlatSVGIcon("Imagenes/Hojas.svg", 60, 60));
+        jLabel3.setIcon(new FlatSVGIcon("Imagenes/Hojas2.svg", 70, 90));
+        jLabel4.setIcon(new FlatSVGIcon("Imagenes/Ondas.svg", 320, 110));
+        jLabel5.setIcon(new FlatSVGIcon("Imagenes/hoja.svg", 20, 20));
 
         setSize(320, 620);
         setResizable(false);
         setLocationRelativeTo(null);
         iniciarAnimacionCarga();
-        
+
     }
-    
+
     private int puntos = 0;
     private Timer timerCarga;
+
     private void iniciarAnimacionCarga() {
         timerCarga = new Timer(500, e -> {
         puntos ++;
@@ -83,37 +83,42 @@ public class Inicio extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         lblCargando = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        EcoLazo1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("EcoLazo");
-        setBackground(new java.awt.Color(229, 214, 193));
+        setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabelLogo.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 200, 180));
+        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 320, 180));
 
         EcoLazo.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        EcoLazo.setForeground(new java.awt.Color(39, 153, 69));
-        EcoLazo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        EcoLazo.setText("EcoLazo");
-        getContentPane().add(EcoLazo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 320, 50));
+        EcoLazo.setForeground(new java.awt.Color(37, 152, 73));
+        EcoLazo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        EcoLazo.setText("Lazo");
+        getContentPane().add(EcoLazo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 170, 55));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Dona, Comparte, Reutiliza");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 320, -1));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 110, 110));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 110, 120));
-
-        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 320, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 70, 60));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 110, 120));
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 320, 180));
 
         lblCargando.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCargando.setText("Cargando");
-        getContentPane().add(lblCargando, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 320, -1));
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 30, 30));
+        getContentPane().add(lblCargando, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 320, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 30, 30));
+
+        EcoLazo1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        EcoLazo1.setForeground(new java.awt.Color(101, 175, 43));
+        EcoLazo1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        EcoLazo1.setText("Eco");
+        getContentPane().add(EcoLazo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 150, 55));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -145,6 +150,7 @@ public class Inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel EcoLazo;
+    private javax.swing.JLabel EcoLazo1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
