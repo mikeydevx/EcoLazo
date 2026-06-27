@@ -37,10 +37,10 @@ public class CrearCuenta extends javax.swing.JFrame {
         txtPassword2.putClientProperty("JTextField.placeholderText", "Repetir Contraseña");
         txtPassword2.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
 
-        
+        setSize(320, 620);
+        setResizable(false);
+        setLocationRelativeTo(null);
          
-        
-
         
     }
     

@@ -116,7 +116,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabelolvidastetucontrasena.setBackground(new java.awt.Color(255, 255, 255));
         jLabelolvidastetucontrasena.setForeground(new java.awt.Color(87, 145, 45));
-        jLabelolvidastetucontrasena.setText("Olvidaste tu contraseña?");
+        jLabelolvidastetucontrasena.setText("¿Olvidaste tu contraseña?");
         jLabelolvidastetucontrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabelolvidastetucontrasena.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
