@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Pantallas_2;
+package Publicaciones;
 
 import java.awt.Image;
 import javax.swing.ImageIcon;
@@ -25,7 +25,7 @@ public class Detalles_Articulo extends javax.swing.JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         
-        ImageIcon icon = new ImageIcon(getClass().getResource("/Imagenes_png/sillas.png"));
+        ImageIcon icon = new ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/sillas.png"));
 
         Image img = icon.getImage().getScaledInstance(
             jLabel3.getWidth(),
@@ -69,7 +69,7 @@ public class Detalles_Articulo extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/sillas.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/sillas.png"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 210, 130));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -108,7 +108,7 @@ public class Detalles_Articulo extends javax.swing.JFrame {
         jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 204, 0)));
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 240, 40));
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/ubi.png"))); // NOI18N
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/ubi.png"))); // NOI18N
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, -1, 40));
 
         jButton1.setBackground(new java.awt.Color(51, 153, 0));
@@ -118,19 +118,19 @@ public class Detalles_Articulo extends javax.swing.JFrame {
         jLabel16.setText("También te podría interesar");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 180, 20));
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/sudadera.png"))); // NOI18N
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/sudadera.png"))); // NOI18N
         jLabel17.setText("jLabel17");
         getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 90, 50));
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/libro.png"))); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/libro.png"))); // NOI18N
         jLabel18.setText("jLabel18");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 530, 80, 50));
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/Computer.png"))); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/Computer.png"))); // NOI18N
         jLabel19.setText("jLabel19");
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 530, 80, 50));
 
-        jbnregresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/flecha.png"))); // NOI18N
+        jbnregresar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/flecha.png"))); // NOI18N
         jbnregresar.addActionListener(this::jbnregresarActionPerformed);
         getContentPane().add(jbnregresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 20, 20));
 

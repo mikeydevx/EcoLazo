@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Pantallas_2;
+package Publicaciones;
 
 /**
  *
@@ -76,7 +76,7 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
         jLabel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 0)));
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 260, 90));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/sillas.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/sillas.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 70, 70));
 
         jLabel3.setText("Silla de madera");
@@ -93,16 +93,16 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
         jbnpublicar.addActionListener(this::jbnpublicarActionPerformed);
         getContentPane().add(jbnpublicar, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 503, 240, 30));
 
-        jbnborrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/botebasura.png"))); // NOI18N
+        jbnborrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/botebasura.png"))); // NOI18N
         getContentPane().add(jbnborrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 20, -1));
 
-        jbneditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/lapiz.png"))); // NOI18N
+        jbneditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/lapiz.png"))); // NOI18N
         getContentPane().add(jbneditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 20, -1));
 
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 0)));
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 260, 90));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/sudadera.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/sudadera.png"))); // NOI18N
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 70, 70));
 
         jLabel8.setText("Sudadera negra");
@@ -114,17 +114,17 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
         jLabel10.setText("1 interesado");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, -1, -1));
 
-        jbneditar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/lapiz.png"))); // NOI18N
+        jbneditar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/lapiz.png"))); // NOI18N
         jbneditar2.addActionListener(this::jbneditar2ActionPerformed);
         getContentPane().add(jbneditar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 20, -1));
 
-        jbnborrar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/botebasura.png"))); // NOI18N
+        jbnborrar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/botebasura.png"))); // NOI18N
         getContentPane().add(jbnborrar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 20, -1));
 
         jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 0)));
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 260, 90));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/libro.png"))); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/libro.png"))); // NOI18N
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 70, 70));
 
         jLabel13.setText("The metamorphosis");
@@ -136,10 +136,10 @@ public class Mis_Publicaciones extends javax.swing.JFrame {
         jLabel15.setText("3 interesados");
         getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, -1, 20));
 
-        jbneditar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/lapiz.png"))); // NOI18N
+        jbneditar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/lapiz.png"))); // NOI18N
         getContentPane().add(jbneditar3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 20, -1));
 
-        jbnborrar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/botebasura.png"))); // NOI18N
+        jbnborrar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/botebasura.png"))); // NOI18N
         getContentPane().add(jbnborrar3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, 20, -1));
 
         pack();

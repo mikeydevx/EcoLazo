@@ -26,12 +26,21 @@ public class Login extends javax.swing.JFrame {
         jLabelLogo.setOpaque(false);
         jLabelLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelLogo.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelLogo.setIcon(new FlatSVGIcon("Imagenes/Logo.svg", 160, 108));
-        txtCorreo.putClientProperty("JTextField.placeholderText", "Correo electrónico o Teléfono");
+        jLabelLogo.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Logo.svg", 160, 108));
+        
+        jLabel1.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Hojas2.svg", 60, 80));
+        jLabel2.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Hojas4.svg", 30, 90));
+        jLabel3.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Ondas.svg", 320, 110));
+        jLabel4.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Hojas3.svg", 70, 100));
+        jLabel7.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Usuario.svg", 12, 15));
+        jLabel6.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Candado.svg", 12, 15));
+        
+        
+        
+        txtCorreo.putClientProperty("JTextField.placeholderText", "Correo electronico o Telefono");
         txtCorreo.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
 
         txtPassword.putClientProperty("JTextField.placeholderText", "Contraseña");
-        txtPassword.putClientProperty("JComponent.roundRect", true);
         txtPassword.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
 
         setSize(320, 620);
@@ -39,6 +48,8 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
 
     }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -49,38 +60,67 @@ public class Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabelLogo = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        txtCorreo = new javax.swing.JTextField();
-        txtPassword = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
-        jLabelolvidastetucontrasena = new javax.swing.JLabel();
-        jLabelnotienescuenta = new javax.swing.JLabel();
-        jLabelregistraser = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabelLogo = new javax.swing.JLabel();
         EcoLazo1 = new javax.swing.JLabel();
         EcoLazo = new javax.swing.JLabel();
+        jLabelslogan = new javax.swing.JLabel();
+        jLabelbienvenido = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        txtCorreo = new javax.swing.JTextField();
+        txtPassword = new javax.swing.JPasswordField();
+        jLabelolvidastetucontrasena = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabelnotienescuenta = new javax.swing.JLabel();
+        jLabelregistraser = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Login");
         setBackground(new java.awt.Color(229, 214, 193));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 60, 80));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 30, 90));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 470, 80, 110));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 460, 320, 160));
+
         jLabelLogo.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 320, 180));
+        jPanel1.add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 320, 220));
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Dona, Comparte, Reutiliza");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 320, -1));
+        EcoLazo1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        EcoLazo1.setForeground(new java.awt.Color(101, 175, 43));
+        EcoLazo1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        EcoLazo1.setText("Eco");
+        jPanel1.add(EcoLazo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 150, 50));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Bienvenido");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 250, 320, -1));
+        EcoLazo.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        EcoLazo.setForeground(new java.awt.Color(37, 152, 73));
+        EcoLazo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        EcoLazo.setText("Lazo");
+        jPanel1.add(EcoLazo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 170, 50));
+
+        jLabelslogan.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelslogan.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabelslogan.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelslogan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelslogan.setText("Dona, Comparte, Reutiliza");
+        jPanel1.add(jLabelslogan, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 320, -1));
+
+        jLabelbienvenido.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabelbienvenido.setForeground(new java.awt.Color(0, 0, 0));
+        jLabelbienvenido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelbienvenido.setText("Bienvenido");
+        jPanel1.add(jLabelbienvenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 320, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 325, 12, 20));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 12, 30));
 
         txtCorreo.setBackground(new java.awt.Color(234, 240, 226));
         txtCorreo.setForeground(new java.awt.Color(0, 0, 0));
@@ -91,7 +131,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         txtCorreo.addActionListener(this::txtCorreoActionPerformed);
-        getContentPane().add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 230, 30));
+        jPanel1.add(txtCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 220, 30));
 
         txtPassword.setBackground(new java.awt.Color(234, 240, 226));
         txtPassword.setForeground(new java.awt.Color(0, 0, 0));
@@ -101,14 +141,8 @@ public class Login extends javax.swing.JFrame {
                 txtPasswordMouseClicked(evt);
             }
         });
-        getContentPane().add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 340, 230, 30));
-
-        jButton1.setBackground(new java.awt.Color(87, 145, 45));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Iniciar sesión");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 160, 30));
+        txtPassword.addActionListener(this::txtPasswordActionPerformed);
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 220, 30));
 
         jLabelolvidastetucontrasena.setBackground(new java.awt.Color(255, 255, 255));
         jLabelolvidastetucontrasena.setForeground(new java.awt.Color(87, 145, 45));
@@ -122,12 +156,19 @@ public class Login extends javax.swing.JFrame {
                 jLabelolvidastetucontrasenaMouseExited(evt);
             }
         });
-        getContentPane().add(jLabelolvidastetucontrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 376, 140, 20));
+        jPanel1.add(jLabelolvidastetucontrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 400, 140, 20));
+
+        jButton1.setBackground(new java.awt.Color(87, 145, 45));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Iniciar sesión");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.addActionListener(this::jButton1ActionPerformed);
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 430, 160, 30));
 
         jLabelnotienescuenta.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabelnotienescuenta.setForeground(new java.awt.Color(0, 0, 0));
-        jLabelnotienescuenta.setText("No tienes cuenta? ");
-        getContentPane().add(jLabelnotienescuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, -1, -1));
+        jLabelnotienescuenta.setText("¿No tienes cuenta? ");
+        jPanel1.add(jLabelnotienescuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, -1, -1));
 
         jLabelregistraser.setBackground(new java.awt.Color(255, 255, 255));
         jLabelregistraser.setForeground(new java.awt.Color(87, 145, 45));
@@ -144,19 +185,12 @@ public class Login extends javax.swing.JFrame {
                 jLabelregistraserMouseExited(evt);
             }
         });
-        getContentPane().add(jLabelregistraser, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 80, -1));
+        jPanel1.add(jLabelregistraser, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 470, 80, -1));
 
-        EcoLazo1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        EcoLazo1.setForeground(new java.awt.Color(101, 175, 43));
-        EcoLazo1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        EcoLazo1.setText("Eco");
-        getContentPane().add(EcoLazo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 150, 50));
+        jLabel5.setText("jLabel5");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 30, 30));
 
-        EcoLazo.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        EcoLazo.setForeground(new java.awt.Color(37, 152, 73));
-        EcoLazo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        EcoLazo.setText("Lazo");
-        getContentPane().add(EcoLazo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 180, 170, 50));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 620));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -178,11 +212,11 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_txtPasswordMouseClicked
 
     private void jLabelolvidastetucontrasenaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelolvidastetucontrasenaMouseEntered
-        jLabelolvidastetucontrasena.setText("<html><u>Olvisaste tu contraseña?</u></html>");
+        jLabelolvidastetucontrasena.setText("<html><u>\u00bfOlvidaste tu contrase\u00f1a?</u></html>");
     }//GEN-LAST:event_jLabelolvidastetucontrasenaMouseEntered
 
     private void jLabelolvidastetucontrasenaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelolvidastetucontrasenaMouseExited
-      jLabelolvidastetucontrasena.setText("Olvisaste tu contraseña?");
+      jLabelolvidastetucontrasena.setText("\u00bfOlvidaste tu contrase\u00f1a?");
     }//GEN-LAST:event_jLabelolvidastetucontrasenaMouseExited
 
     private void jLabelregistraserMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelregistraserMouseEntered
@@ -200,6 +234,15 @@ public class Login extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jLabelregistraserMouseClicked
 
+    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPasswordActionPerformed
+    
+    
+      
+
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -231,10 +274,18 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabelLogo;
+    private javax.swing.JLabel jLabelbienvenido;
     private javax.swing.JLabel jLabelnotienescuenta;
     private javax.swing.JLabel jLabelolvidastetucontrasena;
     private javax.swing.JLabel jLabelregistraser;
+    private javax.swing.JLabel jLabelslogan;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables

@@ -20,17 +20,17 @@ public class Inicio extends javax.swing.JFrame {
     public Inicio() {
         initComponents();
 
-        getContentPane().setBackground(new java.awt.Color(248, 249, 244));
+        
         jLabelLogo.setOpaque(false);
         jLabelLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelLogo.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabelLogo.setIcon(new FlatSVGIcon("Imagenes/Logo.svg", 210, 142));
+        jLabelLogo.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Logo.svg", 210, 142));
         jLabelLogo.setBounds(0, 145, 320, 150);
 
-        jLabel1.setIcon(new FlatSVGIcon("Imagenes/Hojas.svg", 60, 60));
-        jLabel3.setIcon(new FlatSVGIcon("Imagenes/Hojas2.svg", 70, 90));
-        jLabel4.setIcon(new FlatSVGIcon("Imagenes/Ondas.svg", 320, 110));
-        jLabel5.setIcon(new FlatSVGIcon("Imagenes/hoja.svg", 20, 20));
+        jLabel1.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Hojas.svg", 60, 60));
+        jLabel3.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Hojas2.svg", 70, 90));
+        jLabel4.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/Ondas.svg", 320, 110));
+        jLabel5.setIcon(new FlatSVGIcon("Recursos/ImagenesSVG/hoja.svg", 20, 20));
 
         setSize(320, 620);
         setResizable(false);
@@ -75,6 +75,8 @@ public class Inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        EcoLazo1 = new javax.swing.JLabel();
         jLabelLogo = new javax.swing.JLabel();
         EcoLazo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -83,42 +85,48 @@ public class Inicio extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         lblCargando = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        EcoLazo1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("EcoLazo");
         setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        EcoLazo1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
+        EcoLazo1.setForeground(new java.awt.Color(101, 175, 43));
+        EcoLazo1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        EcoLazo1.setText("Eco");
+        jPanel1.add(EcoLazo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 150, 55));
+
         jLabelLogo.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-        getContentPane().add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 320, 180));
+        jPanel1.add(jLabelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 320, 180));
 
         EcoLazo.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         EcoLazo.setForeground(new java.awt.Color(37, 152, 73));
         EcoLazo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         EcoLazo.setText("Lazo");
-        getContentPane().add(EcoLazo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 170, 55));
+        jPanel1.add(EcoLazo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 170, 55));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Dona, Comparte, Reutiliza");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 320, -1));
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 70, 60));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 110, 120));
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 320, 180));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 320, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, 70, 60));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, 110, 120));
+
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 320, 180));
 
         lblCargando.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCargando.setText("Cargando");
-        getContentPane().add(lblCargando, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 320, -1));
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 30, 30));
+        jPanel1.add(lblCargando, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 320, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 30, 30));
 
-        EcoLazo1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        EcoLazo1.setForeground(new java.awt.Color(101, 175, 43));
-        EcoLazo1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        EcoLazo1.setText("Eco");
-        getContentPane().add(EcoLazo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 150, 55));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 620));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -157,6 +165,7 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabelLogo;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblCargando;
     // End of variables declaration//GEN-END:variables
 }

@@ -13,7 +13,7 @@ import javax.swing.JLabel;
  * @author mavel
  */
 public class CrearCuenta extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(CrearCuenta.class.getName());
 
     /**
@@ -21,31 +21,27 @@ public class CrearCuenta extends javax.swing.JFrame {
      */
     public CrearCuenta() {
         initComponents();
-        
+
         txtNombre.putClientProperty("JTextField.placeholderText", "Nombre");
         txtNombre.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
-        
+
         txtApellido.putClientProperty("JTextField.placeholderText", "Apellido");
         txtApellido.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
-        
+
         txtCorreo.putClientProperty("JTextField.placeholderText", "Correo electrónico o Teléfono");
         txtCorreo.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
-        
+
         txtPassword.putClientProperty("JTextField.placeholderText", "Contraseña");
         txtPassword.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
-        
+
         txtPassword2.putClientProperty("JTextField.placeholderText", "Repetir Contraseña");
         txtPassword2.putClientProperty("FlatLaf.style", "arc: 18; borderColor: #4A8C2D; focusedBorderColor: #4A8C2D; background: #F8F9F4");
 
         setSize(320, 620);
         setResizable(false);
         setLocationRelativeTo(null);
-         
-        
-    }
-    
-    
 
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -238,45 +234,45 @@ public class CrearCuenta extends javax.swing.JFrame {
         String apellido = txtApellido.getText().trim();
         String correo = txtCorreo.getText().trim();
         String password = new String(txtPassword.getPassword());
-        
+
         if (nombre.isEmpty()) {
-        javax.swing.JOptionPane.showMessageDialog(this, 
-            "El campo 'Nombre' no puede estar vacío.", 
-            "Atención", 
-            javax.swing.JOptionPane.WARNING_MESSAGE);
-        
-        txtNombre.requestFocus(); // Coloca el cursor en el campo del error
-        return; // Detiene la ejecución para que no avance al login
-    }
-        
-    if(apellido.isEmpty()){
-        javax.swing.JOptionPane.showMessageDialog(this, 
-            "El campo 'Apellido' no puede estar vacío.", 
-            "Atención", 
-            javax.swing.JOptionPane.WARNING_MESSAGE);
-        txtApellido.requestFocus();
-        return;
-    }
-    
-    if(correo.isEmpty()){
-        javax.swing.JOptionPane.showMessageDialog(this, 
-            "El campo 'Correo' no puede estar vacío.", 
-            "Atención", 
-            javax.swing.JOptionPane.WARNING_MESSAGE);
-        txtCorreo.requestFocus();
-        return;
-    }
-        
+            javax.swing.JOptionPane.showMessageDialog(this,
+                    "El campo 'Nombre' no puede estar vacío.",
+                    "Atención",
+                    javax.swing.JOptionPane.WARNING_MESSAGE);
+
+            txtNombre.requestFocus(); // Coloca el cursor en el campo del error
+            return; // Detiene la ejecución para que no avance al login
+        }
+
+        if (apellido.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this,
+                    "El campo 'Apellido' no puede estar vacío.",
+                    "Atención",
+                    javax.swing.JOptionPane.WARNING_MESSAGE);
+            txtApellido.requestFocus();
+            return;
+        }
+
+        if (correo.isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this,
+                    "El campo 'Correo' no puede estar vacío.",
+                    "Atención",
+                    javax.swing.JOptionPane.WARNING_MESSAGE);
+            txtCorreo.requestFocus();
+            return;
+        }
+
         if (password.isEmpty()) {
-        javax.swing.JOptionPane.showMessageDialog(this, 
-            "Te falta ingresar la contraseña", 
-            "Atención", 
-            javax.swing.JOptionPane.WARNING_MESSAGE);
-        
-        txtPassword.requestFocus(); // Coloca el cursor en el password
-        return; // Detiene la ejecución
-    }
-         
+            javax.swing.JOptionPane.showMessageDialog(this,
+                    "Te falta ingresar la contraseña",
+                    "Atención",
+                    javax.swing.JOptionPane.WARNING_MESSAGE);
+
+            txtPassword.requestFocus(); // Coloca el cursor en el password
+            return; // Detiene la ejecución
+        }
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jChecBoxTerminosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jChecBoxTerminosActionPerformed
@@ -300,72 +296,72 @@ public class CrearCuenta extends javax.swing.JFrame {
 
     private void txtNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreKeyTyped
         char c = evt.getKeyChar();
-        
-        if(Character.isDigit(c)){
-           evt.consume(); 
-           return;
-        }
-        
-        if (Character.isWhitespace(c)) {
-        String textoActual = txtNombre.getText();
-        
-        // Bloquea si el campo está vacío (espacio al principio) OR si ya contiene un espacio
-        if (textoActual.isEmpty() || textoActual.contains(" ")) {
-            evt.consume(); 
+
+        if (Character.isDigit(c)) {
+            evt.consume();
             return;
         }
-    }
-        
-        if (txtNombre.getText().length() >=12){
+
+        if (Character.isWhitespace(c)) {
+            String textoActual = txtNombre.getText();
+
+            // Bloquea si el campo está vacío (espacio al principio) OR si ya contiene un espacio
+            if (textoActual.isEmpty() || textoActual.contains(" ")) {
+                evt.consume();
+                return;
+            }
+        }
+
+        if (txtNombre.getText().length() >= 12) {
             evt.consume();
         }
     }//GEN-LAST:event_txtNombreKeyTyped
 
     private void txtApellidoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtApellidoKeyTyped
-       char c = evt.getKeyChar();
-        
-        if(Character.isDigit(c) || Character.isWhitespace(c)){
-           evt.consume(); 
-           return;
+        char c = evt.getKeyChar();
+
+        if (Character.isDigit(c) || Character.isWhitespace(c)) {
+            evt.consume();
+            return;
         }
-        
-        if (txtApellido.getText().length() >=9){ 
+
+        if (txtApellido.getText().length() >= 9) {
             evt.consume();
         }
     }//GEN-LAST:event_txtApellidoKeyTyped
 
     private void txtCorreoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoKeyPressed
-        
+
     }//GEN-LAST:event_txtCorreoKeyPressed
 
     private void txtCorreoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoKeyTyped
         char c = evt.getKeyChar();
-        
-        if(Character.isWhitespace(c)){
-           evt.consume(); 
-           return;
+
+        if (Character.isWhitespace(c)) {
+            evt.consume();
+            return;
         }
-       
-        if (txtCorreo.getText().length() >=26){
+
+        if (txtCorreo.getText().length() >= 26) {
             evt.consume();
         }
     }//GEN-LAST:event_txtCorreoKeyTyped
 
     private void txtPasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPasswordKeyTyped
-    
-    String password = new String(txtPassword.getPassword());
-        
-    if(password.length()>=8){
-        evt.consume();
-    }
+
+        String password = new String(txtPassword.getPassword());
+
+        if (password.length() >= 8) {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtPasswordKeyTyped
 
     private void txtPassword2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPassword2KeyTyped
-    String password = new String(txtPassword2.getPassword());
-        
-    if(password.length()>=8){
-        evt.consume();
-    }
+        String password = new String(txtPassword2.getPassword());
+
+        if (password.length() >= 8) {
+            evt.consume();
+        }
     }//GEN-LAST:event_txtPassword2KeyTyped
 
     /**
@@ -392,9 +388,6 @@ public class CrearCuenta extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new CrearCuenta().setVisible(true));
     }
-    
-    
-   
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

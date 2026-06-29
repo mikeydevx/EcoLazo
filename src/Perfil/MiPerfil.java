@@ -2,21 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Tacos_quesadillas_Diosdado;
+package Perfil;
 
 /**
+ * Formulario base para la pantalla Mi perfil.
  *
- * @author hinol
+ * @author mavel
  */
-public class Pantalla16 extends javax.swing.JFrame {
-    
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Pantalla16.class.getName());
+public class MiPerfil extends javax.swing.JFrame {
+
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(MiPerfil.class.getName());
 
     /**
-     * Creates new form Pantalla16
+     * Creates new form MiPerfil
      */
-    public Pantalla16() {
+    public MiPerfil() {
         initComponents();
+        setSize(320, 620);
+        setResizable(false);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -28,18 +32,22 @@ public class Pantalla16 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        lblTitulo = new javax.swing.JLabel();
+        panelContenido = new javax.swing.JPanel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Mi perfil");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTitulo.setText("Mi perfil");
+        getContentPane().add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 320, 30));
+
+        panelContenido.setBackground(new java.awt.Color(248, 249, 244));
+        panelContenido.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(87, 145, 45)));
+        panelContenido.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(panelContenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 260, 430));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -50,9 +58,6 @@ public class Pantalla16 extends javax.swing.JFrame {
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -65,10 +70,12 @@ public class Pantalla16 extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Pantalla16().setVisible(true));
+        com.formdev.flatlaf.FlatLightLaf.setup();
+        java.awt.EventQueue.invokeLater(() -> new MiPerfil().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JPanel panelContenido;
     // End of variables declaration//GEN-END:variables
 }

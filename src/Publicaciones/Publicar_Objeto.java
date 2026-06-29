@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Pantallas_2;
+package Publicaciones;
 
 /**
  *
@@ -71,7 +71,7 @@ public class Publicar_Objeto extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnflecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/flecha.png"))); // NOI18N
+        btnflecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/flecha.png"))); // NOI18N
         btnflecha.addActionListener(this::btnflechaActionPerformed);
         getContentPane().add(btnflecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 23, 20, 20));
 
@@ -85,7 +85,7 @@ public class Publicar_Objeto extends javax.swing.JFrame {
         jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 204, 0)));
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, 210, 110));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes_png/camara.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ImagenesPNG/camara.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 40, -1));
 
         jLabel5.setForeground(new java.awt.Color(102, 204, 0));

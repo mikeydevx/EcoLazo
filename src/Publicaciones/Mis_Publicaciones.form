@@ -83,7 +83,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes_png/sillas.png"/>
+          <Image iconType="3" name="/Recursos/ImagenesPNG/sillas.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -141,7 +141,7 @@
     <Component class="javax.swing.JButton" name="jbnborrar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes_png/botebasura.png"/>
+          <Image iconType="3" name="/Recursos/ImagenesPNG/botebasura.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -153,7 +153,7 @@
     <Component class="javax.swing.JButton" name="jbneditar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes_png/lapiz.png"/>
+          <Image iconType="3" name="/Recursos/ImagenesPNG/lapiz.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -181,7 +181,7 @@
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes_png/sudadera.png"/>
+          <Image iconType="3" name="/Recursos/ImagenesPNG/sudadera.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -223,7 +223,7 @@
     <Component class="javax.swing.JButton" name="jbneditar2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes_png/lapiz.png"/>
+          <Image iconType="3" name="/Recursos/ImagenesPNG/lapiz.png"/>
         </Property>
       </Properties>
       <Events>
@@ -238,7 +238,7 @@
     <Component class="javax.swing.JButton" name="jbnborrar2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes_png/botebasura.png"/>
+          <Image iconType="3" name="/Recursos/ImagenesPNG/botebasura.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -266,7 +266,7 @@
     <Component class="javax.swing.JLabel" name="jLabel12">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes_png/libro.png"/>
+          <Image iconType="3" name="/Recursos/ImagenesPNG/libro.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -308,7 +308,7 @@
     <Component class="javax.swing.JButton" name="jbneditar3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes_png/lapiz.png"/>
+          <Image iconType="3" name="/Recursos/ImagenesPNG/lapiz.png"/>
         </Property>
       </Properties>
       <Constraints>
@@ -320,7 +320,7 @@
     <Component class="javax.swing.JButton" name="jbnborrar3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Imagenes_png/botebasura.png"/>
+          <Image iconType="3" name="/Recursos/ImagenesPNG/botebasura.png"/>
         </Property>
       </Properties>
       <Constraints>
